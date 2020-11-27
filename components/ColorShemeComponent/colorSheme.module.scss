@@ -1,0 +1,24 @@
+.colorSheme {
+  h1 {
+    padding-top: calc(var(--base-padding) * 2);
+  }
+  ul {
+    font-size: calc(var(--main-fontSize) * 1.5);
+    padding: calc(var(--base-padding) * 2) 0;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        &:last-of-type {
+          display: block;
+          width: 25%;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

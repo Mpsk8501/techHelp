@@ -1,0 +1,28 @@
+:root {
+  --main-font: 'Roboto';
+  --main-fontSize: 10px;
+  --main-color: hsla(0, 0%, 0%, 1);
+  --white-color: hsla(0, 0%, 100%, 1);
+  --base-accentColor: hsla(205, 90%, 45%, 1);
+  --dangerColor: hsla(25, 100%, 40%, 1);
+  --baseBg: hsla(205, 85%, 50%, 1);
+  --mainBg: hsla(93, 39%, 88%, 0.966);
+  --darkBg: hsla(0, 0%, 33%, 1);
+  --overlay-color: hsla(0, 0%, 100%, 0.5);
+
+  /*button_0*/
+  --button-font: 'Montserrat';
+  --button-Shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  --button-bgColor: hsla(205, 85%, 50%, 1);
+  --button-hoverBG: hsla(205, 100%, 60%, 1);
+
+  /*link_0*/
+  --link-font: 'Montserrat';
+  --link-color: hsla(200, 80%, 50%, 1);
+  --link-hoverColor: hsla(205, 100%, 65%, 1);
+  /*helpers_0*/
+  --helper-border-color: hsla(205, 100%, 65%, 1);
+  --helper-Bg-color: hsla(205, 100%, 90%, 0.9);
+  /* paddings */
+  --base-padding: 16px;
+}

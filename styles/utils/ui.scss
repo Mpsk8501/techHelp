@@ -1,0 +1,69 @@
+.h1,
+.h2,
+.h3,
+.h4 {
+  text-align: center;
+}
+.h1 {
+  font-size: calc(var(--main-fontSize) * 2);
+}
+.h2 {
+  font-size: calc(var(--main-fontSize) * 1.8);
+}
+.h3 {
+  font-size: calc(var(--main-fontSize) * 1.6);
+}
+
+.p {
+  font-size: calc(var(--main-fontSize) * 1.5);
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: var(--button-bgColor);
+  font-size: calc(var(--main-fontSize) * 1.5);
+  color: var(--main-color);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 3px;
+  border: 1px solid var(--button-hoverBG);
+  transition: bacground 0.4s, color 0.4s, border 0.4s;
+  &:hover {
+    background-color: var(--button-hoverBG);
+    border-color: var(--button-bgColor);
+    color: var(--white-color);
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: gray;
+  background-color: darkgrey;
+  opacity: 0.7;
+}
+
+.link {
+  font-family: var(--link-font), sans-serif;
+  font-size: calc(var(--main-fontSize) * 1.5);
+  display: inline-block;
+  padding: 5px;
+  transition: 0.4s;
+  color: var(--main-color);
+  //border: 1px solid var(--base-accentColor);
+  &:hover {
+    background-color: var(--button-hoverBG);
+    color: var(--white-color);
+  }
+}
+
+.activeLink {
+  @extend .link;
+  color: var(--dangerColor);
+  &:hover {
+    color: var(--main-color);
+  }
+}

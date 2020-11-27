@@ -1,0 +1,8 @@
+.footer {
+  min-height: 200px;
+  background-color: var(--baseBg);
+  color: var(--white-color);
+  h1 {
+    padding-top: calc(var(--base-padding) * 2);
+  }
+}

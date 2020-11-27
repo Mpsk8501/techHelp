@@ -1,0 +1,15 @@
+@import 'variablesCss';
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 var(--base-padding);
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    min-width: 320px;
+    padding: 0 calc(var(--base-padding) / 2);
+  }
+}

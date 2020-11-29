@@ -2,38 +2,38 @@ import { useEffect, FC } from 'react'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import ChangedStyle from '../components/changeStyle'
-import { styleList, fontSizeList } from '../styleChangeDist'
+//import ChangedStyle from '../components/changeStyle'
+//import { styleList, fontSizeList } from '../styleChangeDist'
 
 const MainLayout: FC = ({ children }) => {
-  const getStyle = () => {
-    const mainComponent = document.querySelector(':root')
-    if (localStorage.getItem('customPreset')) {
-      const newCustomStyle = JSON.parse(localStorage.getItem('customPreset'))
-      for (let key in newCustomStyle) {
-        // @ts-ignore
-        mainComponent.style.setProperty(key, newCustomStyle[key])
-      }
-    }
-    const newStyle = localStorage.getItem('style')
-    const newFontSize = localStorage.getItem('fontSize')
-    if (!!styleList[newStyle]) {
-      for (let key in styleList[newStyle]) {
-        // @ts-ignore
-        mainComponent.style.setProperty(key, styleList[newStyle][key])
-      }
-    }
-    if (!!fontSizeList[newFontSize]) {
-      for (let key in fontSizeList[newFontSize]) {
-        // @ts-ignore
-        mainComponent.style.setProperty(key, fontSizeList[newFontSize][key])
-      }
-    }
-  }
+  // const getStyle = () => {
+  //   const mainComponent = document.querySelector(':root')
+  //   if (localStorage.getItem('customPreset')) {
+  //     const newCustomStyle = JSON.parse(localStorage.getItem('customPreset'))
+  //     for (let key in newCustomStyle) {
+  //       // @ts-ignore
+  //       mainComponent.style.setProperty(key, newCustomStyle[key])
+  //     }
+  //   }
+  //   const newStyle = localStorage.getItem('style')
+  //   const newFontSize = localStorage.getItem('fontSize')
+  //   if (!!styleList[newStyle]) {
+  //     for (let key in styleList[newStyle]) {
+  //       // @ts-ignore
+  //       mainComponent.style.setProperty(key, styleList[newStyle][key])
+  //     }
+  //   }
+  //   if (!!fontSizeList[newFontSize]) {
+  //     for (let key in fontSizeList[newFontSize]) {
+  //       // @ts-ignore
+  //       mainComponent.style.setProperty(key, fontSizeList[newFontSize][key])
+  //     }
+  //   }
+  // }
 
-  useEffect(() => {
-    getStyle()
-  }, [])
+  // useEffect(() => {
+  //   getStyle()
+  // }, [])
 
   return (
     <>
@@ -51,7 +51,7 @@ const MainLayout: FC = ({ children }) => {
         {children}
       </div>
       <Footer />
-      <ChangedStyle />
+      {/* <ChangedStyle /> */}
     </>
   )
 }

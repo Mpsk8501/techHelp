@@ -8,7 +8,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--main-color);
-  font-size: var(--main-fontSize);
+  font-size: calc(var(--main-fontSize) * 1.4);
   cursor: default;
   height: 100%;
 }

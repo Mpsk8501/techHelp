@@ -55,15 +55,14 @@
   color: var(--main-color);
   //border: 1px solid var(--base-accentColor);
   &:hover {
-    background-color: var(--button-hoverBG);
-    color: var(--white-color);
+    text-decoration: underline;
   }
 }
 
 .activeLink {
   @extend .link;
-  color: var(--dangerColor);
+  color: white;
   &:hover {
-    color: var(--main-color);
+    text-decoration: none;
   }
 }
